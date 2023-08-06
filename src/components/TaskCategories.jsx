@@ -14,7 +14,7 @@ const categories = [
   },
   { title: "Cleaning", iconSrc: "./assets/images/sprayer-spray-bottle.png" },
   { title: "Business & Admin", iconSrc: "./assets/images/suitcase.png" },
-  { title: "Delivery", iconSrc: "./assets/images/trolley.png" },
+  { title: "Delivery Food", iconSrc: "./assets/images/trolley.png" },
   { title: "Delivery", iconSrc: "./assets/images/obar.png" },
   { title: "Manpower", iconSrc: "./assets/images/people.png" },
   { title: "Safety", iconSrc: "./assets/images/safety-vest.png" },
@@ -34,14 +34,18 @@ const categories = [
 
 const TaskCategories = () => {
   return (
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 mt-4 md:mt-6 lg:mt-8 px-2">
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 mt-4 md:mt-6 lg:mt-8 px-2">
       {categories.map((item) => (
         <div
-          class="flex flex-col items-center bg-slate-50 hover:bg-slate-100 p-2 rounded-lg shadow-md "
+          className="flex flex-col items-center bg-slate-50 hover:bg-slate-100 p-2 rounded-lg shadow-md "
           key={item.title}
         >
-          <img src={item.iconSrc} alt={item.title} class="w-12 h-12 mb-2 " />
-          <div class="text-sm text-gray-800">{item.title}</div>
+          <img
+            src={item.iconSrc}
+            alt={item.title}
+            className="w-12 h-12 mb-2 "
+          />
+          <div className="text-sm text-gray-800">{item.title}</div>
         </div>
       ))}
     </div>

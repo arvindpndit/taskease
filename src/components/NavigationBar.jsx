@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const NavigationBar = () => {
   return (
-    <div class="fixed bottom-0 left-1/2 transform -translate-x-1/2 w-full md:w-4/5 mx-auto md:px-6 lg:px-8 backdrop-filter backdrop-blur-md p-5">
+    <div className="fixed bottom-0 left-1/2 transform -translate-x-1/2 w-full md:w-4/5 mx-auto md:px-6 lg:px-8 backdrop-filter backdrop-blur-md p-5">
       <ul className="flex justify-between text-lg font-semibold hover:cursor-pointer">
         <Link to="/">
           <FaHome />
