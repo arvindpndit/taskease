@@ -1,25 +1,26 @@
 import React from "react";
 import { FaHome, FaTasks, FaSearch, FaEnvelope, FaUser } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const NavigationBar = () => {
   return (
     <div class="fixed bottom-0 left-1/2 transform -translate-x-1/2 w-full md:w-4/5 mx-auto md:px-6 lg:px-8 backdrop-filter backdrop-blur-md p-5">
-      <ul className="flex justify-between text-lg font-semibold">
-        <li>
+      <ul className="flex justify-between text-lg font-semibold hover:cursor-pointer">
+        <Link to="/">
           <FaHome />
-        </li>
-        <li>
+        </Link>
+        <Link to="/tasks">
           <FaTasks />
-        </li>
-        <li>
+        </Link>
+        <Link to="/search">
           <FaSearch />
-        </li>
-        <li>
+        </Link>
+        <Link to="messages">
           <FaEnvelope />
-        </li>
-        <li>
+        </Link>
+        <Link to="/profile">
           <FaUser />
-        </li>
+        </Link>
       </ul>
     </div>
   );
