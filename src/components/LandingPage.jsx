@@ -5,7 +5,7 @@ import TaskCategories from "./TaskCategories";
 
 const LandingPage = () => {
   return (
-    <div class=" md:p-6 lg:p-8">
+    <div class="w-full md:w-4/5 mx-auto md:px-6 lg:px-8">
       <Header />
       <Slogan />
       <TaskCategories />

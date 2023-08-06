@@ -34,17 +34,16 @@ const categories = [
 
 const TaskCategories = () => {
   return (
-    <div class="p-4 md:p-6 lg:p-8">
-      <div class="text-lg font-semibold mb-4">Post a task & get offers</div>
-
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {categories.map((item) => (
-          <div class="flex flex-col items-center" key={item.title}>
-            <img src={item.iconSrc} alt={item.title} class="w-12 h-12 mb-2" />
-            <div class="text-sm">{item.title}</div>
-          </div>
-        ))}
-      </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 mt-4 md:mt-6 lg:mt-8">
+      {categories.map((item) => (
+        <div
+          class="flex flex-col items-center bg-slate-50 hover:bg-slate-100 p-2 rounded-lg shadow-md "
+          key={item.title}
+        >
+          <img src={item.iconSrc} alt={item.title} class="w-12 h-12 mb-2 " />
+          <div class="text-sm text-gray-800">{item.title}</div>
+        </div>
+      ))}
     </div>
   );
 };
