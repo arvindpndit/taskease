@@ -34,7 +34,7 @@ const categories = [
 
 const TaskCategories = () => {
   return (
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 mt-4 md:mt-6 lg:mt-8">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 mt-4 md:mt-6 lg:mt-8 px-2">
       {categories.map((item) => (
         <div
           class="flex flex-col items-center bg-slate-50 hover:bg-slate-100 p-2 rounded-lg shadow-md "

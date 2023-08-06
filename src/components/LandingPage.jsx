@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header";
 import Slogan from "./Slogan";
 import TaskCategories from "./TaskCategories";
+import HomeFooter from "./HomeFooter";
 
 const LandingPage = () => {
   return (
@@ -9,6 +10,7 @@ const LandingPage = () => {
       <Header />
       <Slogan />
       <TaskCategories />
+      <HomeFooter />
     </div>
   );
 };
