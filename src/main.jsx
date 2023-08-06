@@ -6,7 +6,7 @@ import App from "./App.jsx";
 import "./index.css";
 import LandingPage from "./components/LandingPage.jsx";
 import Tasks from "./components/Tasks.jsx";
-import SearchBar from "./components/SearchBar.jsx";
+import SearchComponent from "./components/SearchComponent.jsx";
 import Messages from "./components/Messages.jsx";
 import Profile from "./components/Profile.jsx";
 
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/search",
-        element: <SearchBar />,
+        element: <SearchComponent />,
       },
       {
         path: "/messages",
