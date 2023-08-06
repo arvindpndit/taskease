@@ -1,8 +1,17 @@
+import { IoMdNotifications } from "react-icons/io";
+import { MdAddTask } from "react-icons/md";
+
 const Header = () => {
   return (
     <div class="sticky top-0 flex justify-between items-center backdrop-filter backdrop-blur-md  p-4 ">
-      <h2 class=" text-xl md:text-2xl font-bold text-gray-700">taskease</h2>
-      <h3 class="text-xs md:text-sm font-medium text-gray-800">notification</h3>
+      <div className="flex items-center">
+        <MdAddTask className="text-2xl" />
+        <h2 class=" text-xl md:text-2xl font-bold">taskease</h2>
+      </div>
+
+      <h3 class="text-2xl text-gray-800">
+        <IoMdNotifications />
+      </h3>
     </div>
   );
 };

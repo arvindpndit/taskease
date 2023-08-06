@@ -10,11 +10,11 @@ const HomeFooter = () => {
           tasks done.
         </p>
       </div>
-      <div className="flex items-center justify-center">
+      <div class="flex items-center justify-center">
         <img
           src="./assets/images/world.png"
           alt="earth"
-          className="w-3/4 md:w-1/2 "
+          className="w-3/4 md:w-1/2 hover:rotate-360 transition-transform duration-1000 transform origin-center"
         />
       </div>
     </section>
