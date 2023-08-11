@@ -4,7 +4,7 @@ import { IoMdNotifications } from "react-icons/io";
 const CommonHeader = ({ heading }) => {
   return (
     <div className="w-full md:w-4/5 mx-auto md:px-6 lg:px-8 mb-4 md:mb-6">
-      <div className="sticky top-0 flex justify-between items-center backdrop-filter backdrop-blur-md  p-4 ">
+      <div className="sticky top-0 flex justify-between items-center backdrop-filter backdrop-blur-md p-4 ">
         <div className="flex items-center">
           <h2 className=" text-xl md:text-2xl font-bold">{heading}</h2>
         </div>
