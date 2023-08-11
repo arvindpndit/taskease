@@ -14,7 +14,7 @@ const ProfileHeader = () => {
         </h3>
       </div>
 
-      <div className="p-4 flex space-x-2 md:space-x-4 border">
+      <div className="p-4 flex space-x-2 md:space-x-4 mb-4 md:mb-6">
         <img
           src="/assets/images/dp/1.jpg"
           alt="Profile"
